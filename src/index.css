@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F5F7FA] text-[#172033] min-h-screen font-sans antialiased text-[14px] leading-normal;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F5F7FA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-[28px] font-bold text-[#172033] tracking-tight leading-tight;
+  }
+
+  h2 {
+    @apply text-[20px] font-semibold text-[#172033] tracking-tight;
+  }
+
+  h3 {
+    @apply text-[16px] font-semibold text-[#172033];
+  }
+
+  p {
+    @apply text-[14px] font-normal text-[#172033];
+  }
+
+  label {
+    @apply text-[13px] font-medium text-[#667085];
+  }
+
+  /* Custom sleek scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F5F7FA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer components {
+  .page-title {
+    @apply text-[28px] font-bold text-[#172033] tracking-tight;
+  }
+
+  .section-title {
+    @apply text-[20px] font-semibold text-[#172033] tracking-tight;
+  }
+
+  .card-title {
+    @apply text-[16px] font-semibold text-[#172033];
+  }
+
+  .body-text {
+    @apply text-[14px] font-normal text-[#172033];
+  }
+
+  .label-text {
+    @apply text-[13px] font-medium text-[#667085];
+  }
+
+  .table-text {
+    @apply text-[13px] font-medium text-[#172033];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-semibold text-[14px] text-white bg-[#1677C8] hover:bg-[#1263A8] active:scale-[0.99] transition-all duration-150 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg font-medium text-[13px] text-[#172033] bg-white hover:bg-slate-50 border border-[#E2E8F0] active:scale-[0.99] transition-all duration-150 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-md text-[13px] text-[#667085] hover:text-[#172033] hover:bg-slate-100 transition-colors;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[13px] font-semibold text-[#DC3545] hover:text-white hover:bg-[#DC3545] border border-[#DC3545]/30 hover:border-[#DC3545] transition-colors;
+  }
+
+  .card-premium {
+    @apply bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-card hover:shadow-card-hover transition-all duration-150;
+  }
+
+  .input-field {
+    @apply w-full bg-white border border-[#E2E8F0] rounded-lg px-3.5 py-2 text-[13px] text-[#172033] placeholder-[#667085]/60 focus:outline-none focus:border-[#1677C8] focus:ring-1 focus:ring-[#1677C8] transition-all shadow-sm font-normal;
+  }
+
+  .select-field {
+    @apply w-full bg-white border border-[#E2E8F0] rounded-lg px-3.5 py-2 text-[13px] text-[#172033] focus:outline-none focus:border-[#1677C8] focus:ring-1 focus:ring-[#1677C8] transition-all shadow-sm font-medium;
+  }
+}
