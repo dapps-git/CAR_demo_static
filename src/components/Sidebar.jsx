@@ -7,7 +7,6 @@ import {
   Wrench,
   LogOut,
   UserCheck,
-  Settings,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -46,12 +45,6 @@ export const Sidebar = ({ onOpenAddCar, onOpenAddService }) => {
       path: '/users',
       icon: UserCheck,
       isActive: location.pathname === '/users',
-    },
-    {
-      name: 'Settings',
-      path: '/settings',
-      icon: Settings,
-      isActive: location.pathname === '/settings',
     },
   ];
 

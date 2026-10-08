@@ -411,7 +411,8 @@ export const CarsList = () => {
         {/* 5. Pagination Footer (Matching screenshot) */}
         <div className="px-4 py-3 bg-white border-t border-[#E2E8F0] flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-[#667085]">
           <div>
-            Showing <strong className="text-[#172033]">1 – {cars.length}</strong> of <strong className="text-[#172033]">842</strong> customers
+            Showing <strong className="text-[#172033]">1 – {cars.length}</strong> of{' '}
+            <strong className="text-[#172033]">{isCustomersView ? '842 customers' : '1,265 vehicles'}</strong>
           </div>
 
           <div className="flex items-center gap-1">

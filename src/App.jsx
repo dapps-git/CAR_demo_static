@@ -76,7 +76,6 @@ export default function App() {
             <Route path="cars/:id" element={<CarDetails />} />
             <Route path="services" element={<ServicesList />} />
             <Route path="users" element={<UsersManagement />} />
-            <Route path="settings" element={<UsersManagement />} />
           </Route>
 
           {/* Catch all */}
